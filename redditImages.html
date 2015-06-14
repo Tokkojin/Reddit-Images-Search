@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/redditImages.css">
+        <script language="javascript" type="text/javascript" src="js/redditImages.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $.getJSON("http://www.reddit.com/r/pics/.json?jsonp=?", function(data) {
+                $.each(data.data.children, function(i,item){
+                    $("<img/>").attr("src", item.data.url).appendTo("#images");
+                });
+            });
+        </script>
+    </head>
+    <title>Reddit Images Search</title>
+
+    <body>
+        <h1>Reddit Images Search</h1>
+
+        <div id="content">
+            <div id="gameboard"></div>
+            <div id="instructions">
+                Enter subreddit</div>
+            <form>
+                <input type="text" name="subreddit" id="subreddit" onkeydown="">
+            </form>
+            <button type="button" onclick="startGame()" id="game button" accesskey="e"><u>E</u>nter</button>
+            <div id="images"></div>
+        </div>
+    </body>
+
+</html>

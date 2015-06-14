@@ -1,0 +1,101 @@
+body
+{
+    font-family: 'BenchNine', sans-serif;
+    background-color: #ADD9CF;
+    overflow: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #6C8996;
+    letter-spacing: -1px;
+    font-size: 24px;
+    line-height: 175%;
+    text-align: left;
+    z-index: 1;
+}
+
+img 
+{ 
+    display: block; 
+}
+
+a
+{
+    text-decoration: none;
+    color: #5CB7BF;
+}
+
+input
+{
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+    margin: 50px 25% 0px 25%;
+}
+
+button
+{
+    margin-bottom: 15px;
+}
+
+button:first-letter
+{
+    text-decoration: underline;
+}
+
+table
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td
+{
+    vertical-align: top;
+}
+#content
+{
+    text-align: center;
+}
+
+#gameboard
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+#instructions
+{   
+    margin-top: 25px;
+    margin-bottom: -25px;
+    font-size: 18px;
+}
+
+#answers
+{
+    -webkit-columns: 75px 5;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 75px 5;
+    /* Firefox */
+    color: green;
+    font-size: 20px;
+}
+
+#missed
+{
+    -webkit-columns: 75px 5;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 75px 5;
+    /* Firefox */
+    color: red;
+    font-size: 20px;
+}
+
+#progress
+{
+    color: green;
+}
